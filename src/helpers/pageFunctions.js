@@ -110,7 +110,7 @@ export function createCityElement(cityInfo) {
 
   btn.addEventListener('click', async () => {
     try {
-      const days = 7;
+      const days = 5;
       const urlCitie = ` http://api.weatherapi.com/v1/forecast.json?lang=pt&key=${VITE_TOKEN}&q=${url}&days=${days}`;
       const sevenDays = await fetch(urlCitie).then((response) => response.json())
         .then((data) => data);
